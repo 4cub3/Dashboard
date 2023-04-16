@@ -7,7 +7,7 @@ import Button from "../../../shared/button/Button";
 import plusDark from '../../../assets/icons/PlusaddIcon.svg';
 const TaskSection = ({ title, number, cardTitleProgress, image, cardImage }) => {
   const progressList = cardTitleProgress.map((data) => (
-    <section key={data.id} className="space-y-6 ">
+    <section key={data.id} className={`space-y-6 ${data.order}`}>
       <CardTitle headTitle={data.headTitle} body={data.body} />
       <CardProgress
         image1={data.image1}
@@ -23,15 +23,15 @@ const TaskSection = ({ title, number, cardTitleProgress, image, cardImage }) => 
   ));
 
   const images = cardImage.map(img =>(
-    <figure key={img.id} className={`h-[16.8rem] ${img.color}`}>
-    <img src={image} alt="" className="w-full h-full object-fill xl:object-contain" />
+    <figure key={img.id} className={`h-[16.8rem] ${img.color} ${img.order}`}>
+    <img src={img.image} alt="" className="w-full h-full object-fill xl:object-contain" />
   </figure>
   ))
   
   return (
-    <section className="space-y-4 xl:w-[30%]">
+    <section className="space-y-4 lg:w-[30%]">
       <Label title={title} number={number} />
-      <Card className='space-y-6 overflow-y-scroll max-h-[55rem]'>
+      <Card className='space-y-6 overflow-y-scroll max-h-[55rem] flex flex-col'>
         {images}
         {progressList}
       </Card>

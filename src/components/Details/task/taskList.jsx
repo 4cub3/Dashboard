@@ -9,9 +9,9 @@ const IMAGES = [
 
 
 export const TASKS = [
+
   {
     id: 0,
-    image: imagePink,
     title: "To Do",
     number: "3",
     cardTitleProgress: [
@@ -47,6 +47,7 @@ export const TASKS = [
     cardImage: [
       {
         id: 0,
+        image: imagePink,
         color: "bg-bgPink",
       }     
     ],
@@ -55,7 +56,6 @@ export const TASKS = [
 
   {
     id: 1,
-    image: imageButter,
     title: "Inprogress",
     number: "1",
     cardTitleProgress: [
@@ -79,6 +79,7 @@ export const TASKS = [
     cardImage: [
       {
         id: 0,
+        image: imageButter,
         color: "bg-bgButter",
       }     
     ],
@@ -87,7 +88,6 @@ export const TASKS = [
 
   {
     id: 2,
-    image: imageGreen,
     title: "Completed",
     number: "2",
     cardTitleProgress: [
@@ -103,9 +103,24 @@ export const TASKS = [
         claculatedWidth:'before:w-5/12',
         comments: 8,
         links: 5,
+        // order: '-order-1',
       },
       {
         id: 1,
+        headTitle: "Userbility testing",
+        body: "Make clear design and color",
+        image1: IMAGES[0],
+        image2: IMAGES[1],
+        image3: IMAGES[2],
+        className: "before:bg-secondaryGreenLight",
+        progress: 4,
+        claculatedWidth: 'before:w-4/12',
+        comments: 6,
+        links: 1,
+        order: '-order-2',
+      },
+      {
+        id: 2,
         headTitle: "Userbility testing",
         body: "Make clear design and color",
         image1: IMAGES[0],
@@ -123,8 +138,17 @@ export const TASKS = [
     cardImage: [
       {
         id: 0,
+        image: imageGreen,
         color: "bg-bgGreen",
-      }     
+      },
+      {
+        id: 1,
+        image: imageGreen,
+        color: "bg-bgGreen",
+        order: 'order-1',
+      },
+      
+       
     ],
   },
 ];

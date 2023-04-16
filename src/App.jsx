@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex h-screen w-full relative">
     <NavBar/>
-    <main className="md:flex-6 lg:flex-4 xl:flex-2 px-[4.4rem] py-[2.8rem] w-full space-y-24 overflow-y-scroll ">
+    <main className="md:flex-2 px-[4.4rem] py-[2.8rem] w-full space-y-24 overflow-y-scroll ">
       <Header />
       <MainNav />
       <Task />

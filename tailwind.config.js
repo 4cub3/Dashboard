@@ -4,13 +4,8 @@ export default {
   theme: {
     extend: {
       flex:{
-        '2':'0 0 86.7%',
-        '3':'0 0 13.3%',
-        '4':'0 0 80%',
-        '5':'0 0 20%',
-        '6':'0 0 76%',
-        '7':'0 0 24%',
-
+        '2':'1 0 0%',
+        '3':'0 0 27.2rem',
       },
       colors:{
         primary: '#1D1042',
@@ -21,7 +16,6 @@ export default {
         bgPink:'#FBC7E0',
         bgButter:'#D9D3CE',
         bgGreen:'#597474',
-
       }
     },
     screens: {
