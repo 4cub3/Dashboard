@@ -5,15 +5,15 @@ const MainNavList = () => {
 
     const listItem = MAIN_NAV.map(list =>(
         <li key={list.id}>
-                <Link to='/' className='flex items-center gap-2 text-zinc-400 font-medium text-[1.4rem] leading-[1.7rem]'>
+                <Link to='/' className='flex items-center gap-2 space-y-12 smm:space-y-0 text-zinc-400 font-medium text-[1.4rem] leading-[1.7rem]'>
                     <img src={list.icon} alt="" />
-                    {list.desc}
+                    <p className='hidden smm:block'>{list.desc}</p>
                 </Link>
         </li>
     ))
 
   return (
-    <ul className='flex flex-col space-y-6 sm:flex-row items-center sm:space-x-6 sm:space-y-0 '>
+    <ul className='flex flex-crow   items-center justify-between smm:justify-start sm:space-x-6  '>
        {listItem}
     </ul>
   )

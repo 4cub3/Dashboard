@@ -20,6 +20,8 @@ export default {
     },
     screens: {
       sm: '480px',
+      smm: '758px',
+      smd: '1113px',
       md: '1280px',
       lg: '1440px',
       xl: '1920px',

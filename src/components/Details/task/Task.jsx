@@ -14,7 +14,7 @@ const Task = () => {
         />
     ))
   return (
-    <main className='flex flex-col space-y-6 sm:flex-row sm:space-y-0  md:justify-between flex-wrap md:flex-nowrap'>
+    <main className='flex flex-col space-y-6 sm:justify-between sm:flex-row sm:space-y-0  md:justify-between flex-wrap md:flex-nowrap px-[4.4rem] py-[2.8rem] bg-gray-50'>
         {taskItem}
     </main>
   )

@@ -24,18 +24,18 @@ const TaskSection = ({ title, number, cardTitleProgress, image, cardImage }) => 
 
   const images = cardImage.map(img =>(
     <figure key={img.id} className={`h-[16.8rem] ${img.color} ${img.order}`}>
-    <img src={img.image} alt="" className="w-full h-full object-fill xl:object-contain" />
+    <img src={img.image} alt="" className="w-full h-full object-cover xl:object-contain" />
   </figure>
   ))
   
   return (
-    <section className="space-y-4 lg:w-[30%]">
+    <section className="space-y-12 lg:w-[30%] smd:w-[48%] w-full smm:w-auto mx-3 py-5">
       <Label title={title} number={number} />
-      <Card className='space-y-6 overflow-y-scroll max-h-[55rem] flex flex-col'>
+      <Card className='space-y-6 overflow-y-scroll max-h-[55rem] flex flex-col rounded-xl'>
         {images}
         {progressList}
       </Card>
-      <Button className='w-full bg-labelColor py-[1.2rem] px-[2.4rem]'>
+      <Button className='w-full bg-labelColor py-[1.2rem] px-[2.4rem] border-dashed border-2'>
         <img src={plusDark} alt="" />
         Add task
       </Button>
