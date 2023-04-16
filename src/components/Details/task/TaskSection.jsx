@@ -29,7 +29,7 @@ const TaskSection = ({ title, number, cardTitleProgress, image, cardImage }) => 
   ))
   
   return (
-    <section className="space-y-12 lg:w-[30%] smd:w-[48%] w-full smm:w-auto mx-3 py-5">
+    <section className="space-y-12 lg:w-[30%] smd:w-[48%] w-full smm:flex-1 mx-3 py-5">
       <Label title={title} number={number} />
       <Card className='space-y-6 overflow-y-scroll max-h-[55rem] flex flex-col rounded-xl'>
         {images}
