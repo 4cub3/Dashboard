@@ -6,12 +6,22 @@ export const DarkModeContext = React.createContext({
 });
 
 const DarkModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") ? true : false
+  );
+
   return (
     <DarkModeContext.Provider
       value={{
         isDark: darkMode,
-        toggleDarkmode: ()=>{setDarkMode((prev) => !prev)},
+        toggleDarkmode: () => {
+          setDarkMode((prev) => !prev);
+          if (localStorage.getItem("darkMode")) {
+            localStorage.removeItem("darkMode");
+          } else {
+            localStorage.setItem("darkMode", "1");
+          }
+        },
       }}
     >
       {children}
@@ -19,4 +29,4 @@ const DarkModeProvider = ({ children }) => {
   );
 };
 
-export default DarkModeProvider
+export default DarkModeProvider;

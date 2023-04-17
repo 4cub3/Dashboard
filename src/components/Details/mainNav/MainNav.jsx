@@ -11,7 +11,7 @@ const MainNav = () => {
     <nav className="flex smm:items-center space-y-4 smm:space-y-0 flex-col smm:flex-row justify-between sm:px-[4.4rem] px-9 py-6 sticky top-60 bg-white dark:bg-slate-800 transition-colors duration-300 smm:top-44 smd:relative smd:top-0 z-10">
       <div className="flex items-center gap-2">
         <Members image1={IMAGES[0]} image2={IMAGES[1]} image3={IMAGES[2]} />
-        <p className="leading-[1.7rem] text-[1.4rem] text-zinc-300">
+        <p className="leading-[1.7rem] text-[1.4rem] text-zinc-400">
           8 members
         </p>
       </div>

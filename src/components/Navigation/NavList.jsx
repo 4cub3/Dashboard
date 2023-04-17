@@ -36,10 +36,10 @@ const NavList = () => {
         {utility}
         <li>
           <button
-            className="gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 py-3 px-6 rounded-md transition-all duration-200 w-full"
+            className="gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 py-3 pr-6 pl-4 rounded-md transition-all duration-200 w-full"
             onClick={()=>{ctxDarkMode.toggleDarkmode()}}
           >
-           <FaLightbulb className="border border-gray-500 w-10 h-10 p-2 rounded-lg  bg-purple-950 dark:bg-blue-950"/> Dark
+           <FaLightbulb className="border border-gray-500 w-12 h-12 p-2 rounded-lg  bg-indigo-950 dark:bg-blue-950"/> {ctxDarkMode.isDark ? 'Light' : 'Dark' }
           </button>
         </li>
       </ul>

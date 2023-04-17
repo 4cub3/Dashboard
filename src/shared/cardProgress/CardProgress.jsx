@@ -20,7 +20,7 @@ const CardProgress = ({
         <p className="text-gray-400 flex items-center gap-2">
           <img src={progressIcon} alt="" /> Progress
         </p>
-        <p className="font-semibold">{progress}/10</p>
+        <p className="font-semibold dark:text-gray-500">{progress}/10</p>
       </div>
 
       <div
