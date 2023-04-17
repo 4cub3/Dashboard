@@ -5,7 +5,7 @@ const NavList = () => {
 
     const navLinks = ICONS_LIST.map(data => (
         <li key={data.id}>
-        <Link className="gap-8 flex text-white text-[1.4rem] leading[1.7rem] capitalize" to='/'>
+        <Link className="gap-8 flex text-white text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary py-3 px-6 rounded-md transition-all duration-300" to='/'>
           <img src={data.icon} alt="" />
           {data.desc}
         </Link>
@@ -14,7 +14,7 @@ const NavList = () => {
 
     const utility = UTILITY_ICONS.map(data => (
         <li key={data.id}>
-        <Link className="gap-8 flex text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize" to='/'>
+        <Link className="gap-8 flex text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary py-3 px-6 rounded-md transition-all duration-200" to='/'>
           <img src={data.icon} alt="" />
           {data.desc}
         </Link>
