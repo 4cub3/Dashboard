@@ -21,7 +21,7 @@ const NavList = () => {
       </li>
     ))
   return (
-    <div className="mt-12 px-3 space-y-10 divide-y divide-gray-50">
+    <div className="my-12 px-3 space-y-10 divide-y divide-gray-50">
     <ul className=" list-none  space-y-8">
       {navLinks}      
     </ul>
