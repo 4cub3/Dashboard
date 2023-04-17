@@ -5,7 +5,7 @@ const CardTitle = ({ headTitle, body }) => {
   return (
     <article className="gap-[1.9rem] ">
       <div className="flex items-center justify-between">
-        <h3 className="leading-[1.9rem] font-semibold text-[1.6rem]">{headTitle} </h3>
+        <h3 className="leading-[1.9rem] font-semibold text-[1.6rem] dark:text-gray-400 transition-colors duration-300">{headTitle} </h3>
         <button>
           <img src={threeDot} />
         </button>
