@@ -4,7 +4,6 @@ import powerIcon from '../../assets/icons/VectoractivitiesIcon.svg';
 import usersIcon from '../../assets/icons/IconusersIcon.svg';
 import addedUserIcon from '../../assets/icons/IconaddUsersIcon.svg';
 import affiliateIcon from '../../assets/icons/IconaffiliateIcon.svg';
-
 export const ICONS_LIST =[{
     id:0,
     icon: dashIcon,
@@ -48,4 +47,5 @@ export const UTILITY_ICONS = [
         icon: usersIcon,
         desc: 'logout',
     },
+  
 ]

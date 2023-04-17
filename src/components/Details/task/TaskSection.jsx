@@ -35,7 +35,7 @@ const TaskSection = ({ title, number, cardTitleProgress, image, cardImage }) => 
         {images}
         {progressList}
       </Card>
-      <Button className='w-full bg-labelColor py-[1.2rem] px-[2.4rem] border-dashed border-2'>
+      <Button className='w-full bg-labelColor py-[1.2rem] px-[2.4rem] border-dashed border-2 dark:border-slate-700 dark:text-gray-400 dark:bg-slate-800 transition-colors duration-300'>
         <img src={plusDark} alt="" />
         Add task
       </Button>

@@ -13,7 +13,7 @@ const MainNavList = () => {
     ))
 
   return (
-    <ul className='flex flex-crow   items-center justify-between smm:justify-start sm:space-x-6  '>
+    <ul className='flex  items-center justify-between smm:justify-start sm:space-x-6 '>
        {listItem}
     </ul>
   )
