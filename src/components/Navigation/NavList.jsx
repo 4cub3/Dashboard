@@ -1,8 +1,7 @@
 import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import { ICONS_LIST, UTILITY_ICONS } from "./nav-icons";
-import Button from "../../shared/button/Button";
-import { FaLightbulb } from "react-icons/fa";
+import { FaRegLightbulb } from "react-icons/fa";
 import { DarkModeContext } from "../../store/DarkContext";
 const NavList = () => {
   const ctxDarkMode = useContext(DarkModeContext)
@@ -36,10 +35,10 @@ const NavList = () => {
         {utility}
         <li>
           <button
-            className="gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 py-3 pr-6 pl-4 rounded-md transition-all duration-200 w-full"
+            className="gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 px-6 py-3 rounded-md transition-all duration-200 w-full"
             onClick={()=>{ctxDarkMode.toggleDarkmode()}}
           >
-           <FaLightbulb className="border border-gray-500 w-12 h-12 p-2 rounded-lg  bg-indigo-950 dark:bg-blue-950"/> {ctxDarkMode.isDark ? 'Light' : 'Dark' }
+           <FaRegLightbulb className="text-[1.6rem]"/> {ctxDarkMode.isDark ? 'Light' : 'Dark' }
           </button>
         </li>
       </ul>
