@@ -24,7 +24,7 @@ const CardProgress = ({
       </div>
 
       <div
-        className={`bg-gray-300 h-3 w-full before:block relative rounded-full ${className} ${claculatedWidth} before:h-full  overflow-hidden `}
+        className={`bg-slate-200 h-3 w-full before:block relative rounded-full ${className} ${claculatedWidth} before:h-full  overflow-hidden `}
       ></div>
 
       <div className="flex justify-between items-center">
