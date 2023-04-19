@@ -3,12 +3,15 @@
 - project-type: Dashboard
 - developer: Akintunde Adedoyin
 - start-date: 2023-04-15
+- End-date:2023-04-19
+- viewProject: [dashboard](https://nupat-dashboard4cub3.netlify.app/)
 - technologies:![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 - prototype : [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-(Community)?node-id=1-1371&t=XS00uTB8LzVMqjZZ-0)
 
 ## Starting the project
 
 This project was created using vite
+This project was deployed on netlify
 
 - step 1: run Npm install to install the dependencies
 - step 2: run npm run dev in your terminal to start the development server
