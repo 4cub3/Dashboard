@@ -29,7 +29,8 @@ export default {
     },
     fontFamily:{
       sans : ['Inter','sans-serif'],
-      display: ['Righteous']
+      display: ['Righteous'],
+      serif: ['Cormorant','Merriweather', 'serif']
     }
   },
   plugins: [],
