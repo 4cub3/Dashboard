@@ -13,7 +13,7 @@ function App() {
       {!ctxDarkmode.modalTrue && <Welcome/> }
     <div className={`flex h-screen w-full relative ${ctxDarkmode.isDark && 'dark'} `}>
     <NavBar/>
-    <main className="md:flex-2 w-full lg:space-y-0 space-y-6 overflow-y-scroll dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-900 transition-colors duration-300">
+    <main className="md:flex-2 w-full overflow-y-scroll dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-900 transition-colors duration-300">
       <Header />
       <MainNav />
       <Task />

@@ -9,7 +9,7 @@ const MainNav = () => {
   ];
   return (
     
-    <nav className="flex smm:items-center space-y-4 smm:space-y-0  smm:flex-row justify-between sm:px-[4.4rem] px-9 py-6 sticky top-[19rem] bg-white  dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-700 dark:backdrop-blur-2xl transition-colors duration-300 smm:top-48 md:top-48 smd:top-60 z-10">
+    <nav className="flex smm:items-center space-y-4 smm:space-y-0  smm:flex-row justify-between sm:px-[4.4rem] px-9 py-6 sticky top-[15.5rem] bg-white  dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-700 dark:backdrop-blur-2xl transition-colors duration-300 sm:top-72 smm:top-48 md:top-48 smd:top-50 z-10">
       <div className="flex items-center gap-2 ">
         <Members image1={IMAGES[0]} image2={IMAGES[1]} image3={IMAGES[2]} />
         <p className="leading-[1.7rem] text-[1.4rem] text-zinc-400 hidden sm:block">
