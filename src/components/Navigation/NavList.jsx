@@ -16,6 +16,7 @@ const NavList = () => {
       </Link>
     </li>
   ));
+  
 
   const utility = UTILITY_ICONS.map((data) => (
     <li key={data.id}>
@@ -35,10 +36,10 @@ const NavList = () => {
         {utility}
         <li>
           <button
-            className="gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 px-6 py-3 rounded-md transition-all duration-200 w-full"
+            className={`overflow-hidden relative gap-8 flex items-center text-white opacity-90 text-[1.4rem] leading[1.7rem] capitalize hover:bg-onPrimary hover:dark:bg-blue-950 px-6 py-3 rounded-md transition-all duration-200 w-full `}
             onClick={()=>{ctxDarkMode.toggleDarkmode()}}
           >
-           { ctxDarkMode.isDark ? <FaSun className="text-[1.6rem] text-orange-300"/> : <FaMoon className="text-[1.6rem]"/> } {ctxDarkMode.isDark ? 'Light' : 'Dark' }
+            <FaSun className={`  absolute top-[50%] left-6  ${ctxDarkMode.isDark ? 'translate-y-[-50%]': 'translate-y-[-300%]'} text-[1.6rem] text-orange-300 transition-all duration-500`}/>  <FaMoon className={`text-[1.6rem] transition-all duration-500 ${ctxDarkMode.isDark ? 'translate-y-[200%]' : 'translate-y-0'}`} />  {ctxDarkMode.isDark ? 'Light' : 'Dark' }
           </button>
         </li>
       </ul>
